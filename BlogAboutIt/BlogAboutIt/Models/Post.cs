@@ -15,7 +15,7 @@ namespace BlogAboutIt.Models
         public string PostName { get; set; }
 
         [Display(Name = "Post Description")]
-        public string PostDesription { get; set; }
+        public string PostDescription { get; set; }
 
         [Display(Name = "Post Content")]
         public string  Content { get; set; }
