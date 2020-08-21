@@ -5,4 +5,6 @@
 3. Microsoft SQL Server
 4. VS 2019
 5. Summernote WYSIWYG editor
-6. CRUD functions
+6. Bootstrap
+7. Fontawesome
+8. CRUD functions
