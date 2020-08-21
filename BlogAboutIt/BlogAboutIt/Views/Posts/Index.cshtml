@@ -8,16 +8,19 @@
 <h1>Posts</h1>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">Create New</a>
+    <a class="btn btn-primary" asp-action="Create">Create New Post</a>
 </p>
-<div class="row">
 
+<div class="row">
     @foreach (var item in Model)
     {
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
                     Post ID: @item.Id
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger float-right">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">@item.PostName</h5>
@@ -25,7 +28,6 @@
                         @{
                             var desc = item.PostDescription;
                         }
-                        @desc.Substring(0, 100)....
                     </p>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Read More</a>
                 </div>
